@@ -6,7 +6,7 @@
 - name: copy roboshop config file
   ansible.builtin.template:
     src: roboshop.conf
-    des: /etc/nginx/default.d/roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
 
 - name: Clean old App content
   ansible.builtin.file:
