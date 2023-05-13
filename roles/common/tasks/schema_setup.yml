@@ -1,6 +1,6 @@
 - name: Copy MongoDB repo file
   ansible.builtin.copy:
-    scr: mongo.repo
+    src: mongo.repo
     dest: /etc/yum.repos.d/mongo.repo
     when: schema_setup == "mongo"
 
