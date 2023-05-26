@@ -14,7 +14,7 @@ filebeat.config.modules:
   reload.enabled: false
 setup.template.settings:
   index.number_of_shards: 1
- setup.kibana:
+ # setup.kibana:
 processors:
   - add_host_metadata:
       when.not.contains.tags: forwarded
