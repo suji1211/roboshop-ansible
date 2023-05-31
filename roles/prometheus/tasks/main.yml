@@ -2,9 +2,9 @@
    ansible.builtin.template:
      src: "{{item}}.yml"
      dest: /opt/prometheus/{{item}}.yml
-    loop:
-      - prometheus
-      - alerts
+   loop:
+     - prometheus
+     - alerts
  - name: Restart Prometheus
    ansible.builtin.systemd:
      name: prometheus
